@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+          <a href="#">
+            <i class="bi bi-currency-bitcoin"></i>
+          </a>
+        </div>
+        <div id="nav-mobile-section">
+          <div id="nav-link-section" class="nav-section">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+          </div>
+          <div id="nav-social-section" class="nav-section">
+            <a href="#">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>    
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <div id="nav-contact-section" class="nav-section">
+            <a href="#">(+63)912 3456 789</a>
+          </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="bi bi-list"></i>
+        </button>
+    </nav>
+      
+      <main>
+
+        <article data-index="0" data-status="active">
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Blockchain technology is a distributed ledger that is secure, transparent, and immutable. Blockchain technology can be used to create a decentralized database that is tamper-proof and has the potential to revolutionize the way we interact with the digital world.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>BLOCKCHAIN TECHNOLOGY</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="1" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>Web3 technology enables the creation of decentralized financial platforms that allow for peer-to-peer transactions without the need for intermediaries such as banks.</p>
+          </div>
+          <div class="article-title-section article-section">
+              <h2>DECENTRALIZED FINANCE</h2>
+              <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="2" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>Web3 technology supports the development of dApps that enable secure and transparent peer-to-peer interactions without intermediaries.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>DECENTRALIZED APPLICATION</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="3" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology is used to create NFT marketplaces where unique digital assets, such as digital art or collectibles, can be bought, sold, and traded.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>NFT - Non Fungible Token</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="4" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create decentralized digital identity systems that give users more control over their personal data and protect against identity theft.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>DIGITAL IDENTITY</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="5" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create more transparent and secure supply chain management systems that enable tracking of products from raw materials to final delivery.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>SUPPLY CHAIN MANAGEMENT</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="6" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create decentralized gaming platforms that allow for secure and transparent peer-to-peer transactions of in-game items and assets.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>GAMING</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="7" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create decentralized social media platforms that enable users to have more control over their data and privacy.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>SOCIAL MEDIA</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="8" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create decentralized energy trading platforms that enable peer-to-peer energy transactions between individuals and businesses.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>DECENTRALIZED ENERGY</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="9" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create secure and transparent voting systems that protect against fraud and ensure transparency.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>VOTING</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+
+        <article data-index="10" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              Web3 technology can be used to create secure and decentralized healthcare systems that enable patients to have more control over their medical data and ensure privacy.
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>HEALTHCARE</h2>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        
+      </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
